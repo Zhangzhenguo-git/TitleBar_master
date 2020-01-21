@@ -134,8 +134,8 @@ public class MultiTitleBar extends FrameLayout {
     /**
      * 获取View
      */
-    public TextView getHeadRightView() {
-        return headCenterTitle;
+    public ImageView getHeadRightView() {
+        return headRightSearch;
     }
     /**
      * 设置标题栏搜索按钮图标
@@ -147,8 +147,8 @@ public class MultiTitleBar extends FrameLayout {
     /**
      * 获取View
      */
-    public TextView getHeadConterTextView() {
-        return headCenterTitle;
+    public TextView getHeadRightTextView() {
+        return headRightEdit;
     }
 
     /**
