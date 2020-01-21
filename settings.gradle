@@ -1,2 +1,2 @@
-include ':app', ':multititlebar'
+include ':app', ':multititlebar', ':loading'
 rootProject.name='TitleBar_master'

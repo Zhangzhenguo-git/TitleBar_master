@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RotateView">
+        <!-- 开始颜色 -->
+        <attr name="r_start_color" format="color|reference" />
+        <!-- 结束颜色 -->
+        <attr name="r_end_color" format="color|reference" />
+        <!-- 圆点数量 -->
+        <attr name="r_dot_count" format="integer|dimension" />
+        <!-- 圆点大小 -->
+        <attr name="r_dot_radius" format="integer|float|dimension" />
+        <!-- 是否自动开启旋转，默认开启 -->
+        <attr name="r_auto_start" format="boolean" />
+        <!-- 每次旋转的角度 -->
+        <attr name="r_rotate_angle" format="integer|dimension" />
+        <!-- 点模式，普通模式、缩放模式 -->
+        <attr name="r_dot_mode" format="enum">
+            <enum name="normal" value="1" />
+            <enum name="scale" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

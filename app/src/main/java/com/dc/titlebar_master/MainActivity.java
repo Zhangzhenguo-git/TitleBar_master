@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.dc.loading.LoadingView;
 import com.dc.multititlebar.MultiTitleBar;
 
 public class MainActivity extends AppCompatActivity {
     private MultiTitleBar multiTitleBar;
+    private LoadingView mLoadingView;
+    private LoadingView mLoadingView1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        mLoadingView=findViewById(R.id.loadView);
+        mLoadingView1=findViewById(R.id.loadView1);
+        mLoadingView.run();
+        mLoadingView1.run();
     }
 }

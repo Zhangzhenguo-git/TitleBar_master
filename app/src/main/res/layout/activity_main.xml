@@ -9,8 +9,27 @@
     <com.dc.multititlebar.MultiTitleBar
         android:id="@+id/mTitleBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
     </com.dc.multititlebar.MultiTitleBar>
+    <com.dc.loading.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:r_dot_mode="scale"
+        app:r_dot_radius="@dimen/dp_3"
+        app:r_start_color="@android:color/darker_gray" >
+    </com.dc.loading.LoadingView>
+
+    <com.dc.loading.LoadingView
+        android:id="@+id/loadView1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        app:r_start_color="@android:color/holo_red_dark"
+        android:layout_below="@id/loadView">
+    </com.dc.loading.LoadingView>
 
 </RelativeLayout>
