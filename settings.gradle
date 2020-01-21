@@ -1,0 +1,2 @@
+include ':app', ':multititlebar'
+rootProject.name='TitleBar_master'
