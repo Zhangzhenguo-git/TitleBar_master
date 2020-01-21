@@ -10,6 +10,7 @@
         android:layout_width="@dimen/dp_60"
         android:layout_height="match_parent"
         tools:src="@drawable/msg_return_icon"
+        android:visibility="gone"
         android:paddingTop="@dimen/dp_20"
         android:layout_alignParentLeft="true">
     </ImageView>
@@ -20,6 +21,7 @@
         tools:text="应用商店"
         android:gravity="center"
         android:textSize="@dimen/sp_23"
+        android:visibility="gone"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white">
@@ -29,7 +31,7 @@
         android:layout_width="@dimen/dp_60"
         android:layout_height="match_parent"
         android:src="@drawable/msg_search_icon"
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_alignParentRight="true"
         android:paddingTop="@dimen/dp_20">
     </ImageView>

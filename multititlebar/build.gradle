@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-group='com.github.828189539@qq.com'
+//group='com.github.828189539@qq.com'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -32,17 +32,17 @@ dependencies {
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
-//生成依赖01
-task makeJar(type:Copy){
-    //如果之前存在，则先删除
-    delete 'build/libs/classe12.jar'
-    //设置拷贝的文件
-    from('build/intermediates/packaged-classes/debug/')
-    //生成jar包后的文件目录位置
-    into('build/libs/')
-    //include,exclude参数来设置过滤
-    include('classe.jar')
-    //重命名
-    rename('classe.jar','classe.jar12')
-}
-makeJar.dependsOn(build)
+////生成依赖01
+//task makeJar(type:Copy){
+//    //如果之前存在，则先删除
+//    delete 'build/libs/classe12.jar'
+//    //设置拷贝的文件
+//    from('build/intermediates/packaged-classes/debug/')
+//    //生成jar包后的文件目录位置
+//    into('build/libs/')
+//    //include,exclude参数来设置过滤
+//    include('classe.jar')
+//    //重命名
+//    rename('classe.jar','classe.jar12')
+//}
+//makeJar.dependsOn(build)

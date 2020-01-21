@@ -68,6 +68,15 @@ public class MultiTitleBar extends FrameLayout {
                 }
             }
         });
+        headRightEdit.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (listener != null) {
+                    listener.onHeadRightText(v);
+                }
+            }
+        });
+
     }
 
     /**
@@ -151,9 +160,13 @@ public class MultiTitleBar extends FrameLayout {
 
     }
 
+    /**
+     * 返回按钮和右侧功能按钮事件
+     */
     public interface onHeadItemClickListener {
         void onHeadReturn(View view);
         void onHeadRight(View view);
+        void onHeadRightText(View view);
     }
 
     public void setOnHeadItemClickListener(onHeadItemClickListener listener) {
